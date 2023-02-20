@@ -1,0 +1,8 @@
+.bpMain {
+    -fx-background-color: rgb(87, 87, 153);
+    -fx-border-radius: 10px;
+}
+
+.label {
+    -fx-text-fill: white;
+}

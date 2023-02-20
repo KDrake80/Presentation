@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+
+<BorderPane fx:id="bpCreateMain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <bottom>
+      <HBox fx:id="hbButtons" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="btCreateSubmit" mnemonicParsing="false" text="Submit" />
+            <Button fx:id="btCreateCancel" mnemonicParsing="false" text="Cancel" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <center>
+      <HBox fx:id="hbCreateMain" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="vbCreateLabels" alignment="CENTER" prefHeight="280.0" prefWidth="149.0" spacing="20.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <Label fx:id="lbCreateAccountName" text="Account Name:" />
+                  <Label fx:id="lbCreatePass" text="Password:" />
+                  <Label fx:id="lbCreateFirst" text="First Name:" />
+                  <Label fx:id="lbCreateLast" text="Last Name:" />
+               </children>
+            </VBox>
+            <VBox fx:id="vbCreateText" alignment="CENTER" prefHeight="280.0" prefWidth="138.0" spacing="10.0">
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+               <children>
+                  <TextField fx:id="tfCreateAccountName" />
+                  <TextField fx:id="tfCreatePass" />
+                  <TextField fx:id="tfCreateFirst" />
+                  <TextField fx:id="tfCreateLast" />
+               </children>
+            </VBox>
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </HBox>
+   </center>
+   <top>
+      <VBox fx:id="vbCreateDirectons" alignment="CENTER" prefHeight="140.0" prefWidth="600.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="lbCreateDir1" prefHeight="17.0" prefWidth="192.0" text="1. Enter Account Name" />
+            <Label fx:id="lbCreateDir2" prefHeight="17.0" prefWidth="191.0" text="2. Enter Password" />
+            <Label fx:id="lbCreateDir3" text="3. Enter First, Last, and Click Submit!" />
+         </children>
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+      </VBox>
+   </top>
+</BorderPane>
